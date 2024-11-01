@@ -4,6 +4,7 @@ author: Fabian Schmidt
 date: 2024-10-31
 category: Jekyll
 layout: post
+permalink: /pages/dataset_overview/
 ---
 
 # Locations
