@@ -1,7 +1,7 @@
 ---
-icon: fas fa-robot
-order: 1
 title: Recording System
+category: Jekyll
+layout: post
 ---
 
 # Robotic Platform
