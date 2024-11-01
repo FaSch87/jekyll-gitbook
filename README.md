@@ -2,7 +2,7 @@
 layout: home
 title: Home
 permalink: /
-+ cover: {{ site.baseurl }}/assets/images/dataset_preview2.png
+# + cover: {{ site.baseurl }}/assets/images/dataset_preview2.png
 ---
 
 # Welcome to The ROVER Dataset
@@ -12,7 +12,7 @@ Hello everyone! We’re excited to share **The ROVER Dataset** with you. This da
 Explore our dataset, discover the recording system used, and dive into the chapters below to get started!
 
 ## Chapters
-- [Recording System](/pages/recording_system)  
+- [Recording System](/pages/recording_system)
   Discover the sensors, platforms, and technical specifications behind the dataset collection.
 
 - [Dataset Overview](/pages/dataset_overview)  
