@@ -19,6 +19,8 @@ The robotic platform is based on a modified prototype of a robotic lawn mower, w
 
 The robotic platform is outfitted with carefully selected sensors to provide multi-modal data, enabling robust SLAM evaluation under diverse conditions. The sensors include cameras, IMUs, and a precision ground truth system. Below is an overview of the sensors and their specifications.
 
+<div class="table-wrapper" markdown="block">
+
 | **Sensor**                  | **Modality**  | **Characteristics**                                                                             | **Data Rate [Hz]** |
 | --------------------------- | ------------- | ----------------------------------------------------------------------------------------------- | ------------------ |
 | **Joy IT Pi Camera**        | Camera        | Resolution: 640 x 480 RGB, Rolling Shutter, FoV: 160°/122°/89.5°, Wide Angle, Fixed Focus       | 30                 |
@@ -30,6 +32,8 @@ The robotic platform is outfitted with carefully selected sensors to provide mul
 |                             | IMU           | 6 DoF: Accelerometer, Gyrometer                                                                 | 65, 200            |
 | **VectorNav VN100**         | IMU           | 9 DoF: Accelerometer, Gyrometer, Magnetometer                                                   | 65                 |
 | **Leica TS16 Totalstation** | Laser Tracker | 3 DoF Position, Accuracy: 1mm + 1.5 ppm                                                         | 2 - 5              |
+
+</div>
 
 ## Cameras
 

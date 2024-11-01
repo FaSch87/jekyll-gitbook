@@ -27,6 +27,8 @@ Each environment was selected based on several important criteria, which help in
 
 - **Brightness:** Ambient lighting levels, from bright open spaces to shaded areas, affect visual perception systems. Dynamic lighting changes, such as shifting cloud cover, test a system's ability to adapt to varying brightness levels.
 
+<div class="table-wrapper" markdown="block">
+
 | **Location** | **Size [sqm]** | **Shape Complexity** | **Slope Inclination** | **Long-Term Stability** | **Vegetation** | **Brightness** |
 | ------------ | -------------- | -------------------- | --------------------- | ----------------------- | -------------- | -------------- |
 | Park         | 250            | High                 | Medium                | Medium                  | High           | Medium         |
@@ -35,6 +37,7 @@ Each environment was selected based on several important criteria, which help in
 | Garden Small | 100            | Medium               | None                  | Medium                  | Medium         | Low            |
 | Garden Large | 250            | High                 | Low                   | Low                     | High           | High           |
 
+</div>
 
 ## Park
 ![Park]({{ site.baseurl }}/assets/images/park.jpg)
@@ -72,6 +75,8 @@ The table below provides a summary of the recordings and their associated enviro
 To ensure consistency across recordings, we used a standardized route referred to as the *Perimeter* scenario. In this scenario, the robot follows the edge of the lawn area, completing three full rounds. Each round has slight trajectory variations and partial overlaps with the previous ones, creating realistic spatial coverage and enhancing the dataset with natural path variations. This approach enables the analysis of how environmental changes over time affect localization accuracy along a familiar path. It also supports loop-closing opportunities to maintain accurate long-term localization and promotes robust long-term mapping by capturing the same environment repeatedly under diverse conditions.
 
 Note: A winter recording for the Park location is not included due to heavy slippage caused by the slope inclination. Additionally, the Campus Large Summer recording lacks PiCam data, while the Campus Large Dusk and Garden Small Winter recordings do not contain data from the D435i internal IMU.
+
+<div class="table-wrapper" markdown="block">
 
 | **Location**     | **Date**              | **Distance [m]** | **Duration [s]** | **Windy** | **Sunny** | **Cloudy** | **Dusk** | **Night** | **+ Light** |
 | ---------------- | --------------------- | ---------------- | ---------------- | --------- | --------- | ---------- | -------- | --------- | ----------- |
@@ -115,6 +120,7 @@ Note: A winter recording for the Park location is not included due to heavy slip
 |                  | 2024-05-30 - 21:50:12 | 150.53           | 380.96           |           |           |            |          | x         |             |
 |                  | 2024-05-30 - 22:03:19 | 151.80           | 383.83           |           |           |            |          |           | x           |
 
+</div>
 
 # Data Description
 
@@ -154,6 +160,8 @@ The dataset contains raw data organized by sequence directories, with sensor-spe
 
 We provide scripts to convert raw data into ROS bag files, available [here](link-to-github). Note that the IMU publishing rate for Intel RealSense D435i and T265 depends on the snychronization strategy of acceleromenter and gyrometer. The generated topics include the following data streams:
 
+<div class="table-wrapper" markdown="block">
+
 | **Sensor**            | **ROS Topic**        | **ROS Message Type** | **Publish Rate [Hz]** |
 | --------------------- | -------------------- | -------------------- | --------------------- |
 | Intel RealSense D435i | /d435i/rgb_image     | sensor_msgs/Image    | 30                    |
@@ -164,3 +172,5 @@ We provide scripts to convert raw data into ROS bag files, available [here](link
 |                       | /t265/imu            | sensor_msgs/Imu      | 65/200/265            |
 | PiCam                 | /pi_cam_02/rgb_image | sensor_msgs/Image    | 30                    |
 | VN100                 | /vn100/imu           | sensor_msgs/Imu      | 65                    |
+
+</div>
