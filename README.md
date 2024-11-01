@@ -2,6 +2,7 @@
 layout: home
 title: Home
 permalink: /
++ cover: /assets/images/dataset_preview2.png
 ---
 
 # Welcome to The ROVER Dataset
